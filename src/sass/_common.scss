@@ -1,1 +1,25 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
+
+body {
+    position: relative;
+}
+
+.footer {
+    display: flex;
+    margin-right: 15px;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+.footer.text {
+    font-weight: 900;
+}
+
+.footer_logo {
+    max-width: 80px;
+    margin-left: 10px;
+}
+
+.gallery-item {}
