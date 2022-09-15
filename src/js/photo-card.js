@@ -37,5 +37,5 @@ const CreateImageCard = data => {
         </div>`
     )
     .join(' ');
-  return cardImg;
+  return photoCard;
 };

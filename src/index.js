@@ -51,8 +51,8 @@ const onSearch = async evt => {
       Notiflix.Notify.info(`Hooray! We found ${data.totalHits} images.`);
       refs.gallery.insertAdjacentHTML('beforeend', CreateImageCard(data.hits));
       lightbox.refresh();
-      console.log(data.hits.length);
-      console.log(searchPhoto.perPage);
+      // console.log(data.hits.length);
+      // console.log(searchPhoto.perPage);
       if (searchPhoto.perPage <= data.hits.length) {
         refs.more.classList.remove('is-hidden');
       }
