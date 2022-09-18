@@ -24,7 +24,7 @@ const searchPhoto = new SearchPhoto(40);
 const onSearch = async evt => {
   evt.preventDefault();
   searchPhoto.page = 1;
-  searchPhoto.query = e.currentTarget.elements.searchQuery.value.trim();
+  searchPhoto.query = evt.currentTarget.elements.searchQuery.value.trim();
 
   if (searchPhoto.query === '') {
     clearContent();
