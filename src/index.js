@@ -58,7 +58,7 @@ const onSearch = async evt => {
       }
     }
   } catch {
-    console.log(error);
+    console.log('error');
   }
 };
 
@@ -78,7 +78,7 @@ const searchMore = async () => {
       refs.more.classList.add('is-hidden');
     }
   } catch {
-    console.log(error);
+    console.log('error');
   }
 };
 refs.more.addEventListener('click', searchMore);
