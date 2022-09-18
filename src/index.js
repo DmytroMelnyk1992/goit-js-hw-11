@@ -30,7 +30,7 @@ const onSearch = async evt => {
     clearContent();
     refs.keyword.textContent = '';
     refs.form.reset();
-    // refs.more.classList.add('is-hidden');
+    refs.more.classList.add('is-hidden');
     Notiflix.Notify.failure('Please, fill out the search form');
     return;
   }
@@ -71,9 +71,9 @@ const searchMore = async () => {
     const totalPages = Math.ceil(data.totalHits / searchPhoto.perPage);
     refs.gallery.insertAdjacentHTML('beforeend', CreateImageCard(data.hits));
     lightbox.refresh();
-    // console.log(data.hits.length);
-    // console.log(serchPhoto.page);
-    // console.log(totalPages);
+    console.log(data.hits.length);
+    console.log(serchPhoto.page);
+    console.log(totalPages);
     if (searchPhoto.page === totalPages) {
       refs.more.classList.add('is-hidden');
     }
