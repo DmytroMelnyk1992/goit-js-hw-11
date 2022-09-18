@@ -6,19 +6,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Page title</title>
   <link rel="stylesheet" href="./sass/index.scss" />
-  <!-- <script type="module" src="./index.js"></script> -->
+
 </head>
 
 <body>
   <form class="search-form" id="search-form">
     <input type="text" name="searchQuery" autocomplete="off" placeholder="Search images..." />
-    <button type="submit">Search</button>
+    <button type="submit">
+      <img src="./images/search.svg" alt="search" class="search-btn">
+    </button>
   </form>
-  <p>Image search by keyword: <span class="keyword">keyword</span></p>
+  <div class="keyword is-hidden">
+    <p>Image search by keyword: <span class="keyword">keyword</span></p>
+  </div>
+
+
   <div class="gallery">
     <!-- Картки зображень -->
   </div>
-  <button type="button" class="load-more is hidden">Load more</button>
+  <div class="loadmore">
+    <button type="button" class="load-more is-hidden">Load more</button>
+  </div>
   <footer>
     <div class="footer">
       <p class="footer_text">Powered by</p>
